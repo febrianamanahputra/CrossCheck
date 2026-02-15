@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Renovki Dashboard",
+  "description": "Instagram-style site management dashboard for Febrian Renovki featuring multi-location inventory, reporting, progress tracking, and expense logging.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
