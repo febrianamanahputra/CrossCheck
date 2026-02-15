@@ -26,8 +26,9 @@ export const NoteView: React.FC<NoteViewProps> = ({ data, updateData, userName, 
   const now = new Date();
   const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
   const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-  // Change format here as requested: Day | Date Month | Year
-  const dateStr = `${days[now.getDay()]} | ${now.getDate()} ${months[now.getMonth()]} | ${now.getFullYear()}`;
+  
+  // Menggunakan koma sesuai permintaan: Hari, Tanggal Bulan, Tahun
+  const dateStr = `${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]}, ${now.getFullYear()}`;
 
   const toggleModal = (item: { type: 'plan' | 'progress', id: string, text: string } | null) => {
     setActiveItem(item);
